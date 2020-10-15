@@ -133,7 +133,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>
-						com.mft.MftOauthApplication
+						com.mft.OauthApplication
 					</mainClass>
 				</configuration>
 				<executions>
