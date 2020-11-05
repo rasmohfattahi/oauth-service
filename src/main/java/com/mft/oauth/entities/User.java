@@ -32,10 +32,10 @@ public class User extends FUser {
     private Date accountLockDate;
 
     @JoinColumn(name = "organisation_id")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Organisation organisation;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "user_groups",
             joinColumns = {@JoinColumn(name = "user_id")},

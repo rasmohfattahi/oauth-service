@@ -3,6 +3,7 @@ spring:
     active: local
   application:
     name: uaa-server
+  mohsen:
 
   datasource:
     url:
@@ -40,7 +41,20 @@ spring:
       write-dates-as-timestamps: false
 
 server:
+  port: 9999
   servlet:
     context-path: /uaa
     session:
       timeout: 30m
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+  client:
+    registryFetchIntervalSeconds: 1
+    serviceUrl:
+      defaultZone:
+    register-with-eureka: true
+    fetch-registry: true

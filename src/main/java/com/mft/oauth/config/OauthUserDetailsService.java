@@ -6,6 +6,7 @@ import com.mft.oauth.dao.ResourceRepository;
 import com.mft.oauth.entities.Resource;
 import com.mft.oauth.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.dao.DataAccessException;
 import org.springframework.security.authentication.BadCredentialsException;

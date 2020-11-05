@@ -1,63 +1,62 @@
---localhost:9999/uaa/oauth/token?grant_type=password&username=admin&password=123456
-CREATE TABLE OAUTH_ACCESS_TOKEN
+create table oauth_access_token
 (
-  TOKEN_ID           VARCHAR(255),
-  TOKEN              BLOB,
-  AUTHENTICATION_ID  VARCHAR(255),
-  USER_NAME          VARCHAR(255),
-  CLIENT_ID          VARCHAR(255),
-  AUTHENTICATION     BLOB,
-  REFRESH_TOKEN      VARCHAR(255)
+  token_id           varchar(255),
+  token              blob,
+  authentication_id  varchar(255),
+  user_name          varchar(255),
+  client_id          varchar(255),
+  authentication     blob,
+  refresh_token      varchar(255)
 );
 
 
-CREATE TABLE OAUTH_APPROVALS
+create table oauth_approvals
 (
-  USERID          VARCHAR(255),
-  CLIENTID        VARCHAR(255),
-  SCOPE           VARCHAR(255),
-  STATUS          VARCHAR(10),
-  EXPIRESAT       TIMESTAMP(6),
-  LASTMODIFIEDAT  TIMESTAMP(6)
+  userid          varchar(255),
+  clientid        varchar(255),
+  scope           varchar(255),
+  status          varchar(10),
+  expiresat       timestamp(6),
+  lastmodifiedat  timestamp(6)
 );
 
 
-CREATE TABLE OAUTH_CLIENT_DETAILS
+create table OAUTH_CLIENT_DETAILS
 (
-  CLIENT_ID                VARCHAR(255),
-  RESOURCE_IDS             VARCHAR(255),
-  CLIENT_SECRET            VARCHAR(255),
-  SCOPE                    VARCHAR(255),
-  AUTHORIZED_GRANT_TYPES   VARCHAR(255),
-  WEB_SERVER_REDIRECT_URI  VARCHAR(255),
-  AUTHORITIES              VARCHAR(255),
-  ACCESS_TOKEN_VALIDITY    INTEGER,
-  REFRESH_TOKEN_VALIDITY   INTEGER,
-  ADDITIONAL_INFORMATION   BLOB,
-  AUTOAPPROVE              VARCHAR(255)
+  client_id                varchar(255),
+  resource_ids             varchar(255),
+  client_secret            varchar(255),
+  scope                    varchar(255),
+  authorized_grant_types   varchar(255),
+  web_server_redirect_uri  varchar(255),
+  authorities              varchar(255),
+  access_token_validity    integer,
+  refresh_token_validity   integer,
+  additional_information   blob,
+  autoapprove              varchar(255)
 );
 
 
-CREATE TABLE OAUTH_CLIENT_TOKEN
+create table oauth_client_token
 (
-  TOKEN_ID           VARCHAR(255),
-  TOKEN              BLOB,
-  AUTHENTICATION_ID  VARCHAR(255),
-  USER_NAME          VARCHAR(255),
-  CLIENT_ID          VARCHAR(255)
+  token_id           varchar(255),
+  token              blob,
+  authentication_id  varchar(255),
+  user_name          varchar(255),
+  client_id          varchar(255)
 );
 
 
-CREATE TABLE OAUTH_CODE
+create table oauth_code
 (
-  CODE            VARCHAR(255),
-  AUTHENTICATION  BLOB
+  code            varchar(255),
+  authentication  blob
 );
 
 
-CREATE TABLE OAUTH_REFRESH_TOKEN
+create table oauth_refresh_token
 (
-  TOKEN_ID        VARCHAR(255),
-  TOKEN           BLOB,
-  AUTHENTICATION  BLOB
+  token_id        varchar(255),
+  token           blob,
+  authentication  blob
 )
