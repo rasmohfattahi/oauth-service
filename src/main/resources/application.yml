@@ -1,14 +1,10 @@
 spring:
-  profiles:
-    active: local
   application:
-    name: uaa-server
-  mohsen:
-
+    name: uaa
   datasource:
-    url:
-    username:
-    password:
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
     driverClassName: com.mysql.cj.jdbc.Driver
     dbcp2:
       max-total: 25
@@ -39,6 +35,13 @@ spring:
   jackson:
     serialization:
       write-dates-as-timestamps: false
+
+cloud:
+  aws:
+    region:
+      static: eu-central-1
+    stack:
+      auto: false
 
 server:
   port: 9999
