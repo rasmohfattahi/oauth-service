@@ -60,6 +60,6 @@ eureka:
   client:
     registryFetchIntervalSeconds: 1
     serviceUrl:
-      defaultZone:
+      defaultZone: http://ec2-3-120-208-177.eu-central-1.compute.amazonaws.com:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
