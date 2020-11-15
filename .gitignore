@@ -1,1 +1,8 @@
-/target/
+/*
+!src
+!.gitignore
+!pom.xml
+**/resources/*.jks
+**/resources/*.pub
+**/resources/application-dev.yml
+!README.md
