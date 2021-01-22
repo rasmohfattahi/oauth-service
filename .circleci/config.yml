@@ -17,6 +17,7 @@ jobs:
       - image: circleci/openjdk:11
     steps:
       - checkout
+      - aws-cli/install
       - run:
           name: Mvn clean package
           command: mvn clean package
