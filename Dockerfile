@@ -7,4 +7,8 @@ ENTRYPOINT ["java", "-jar", "docker-oauth.jar"]
 #docker images
 #docker run -p 9999:9999 docker-image-oauth
 #docker tag docker-image-oauth:latest docker-image-oauth-tag
+#docker save -o image.tardocker-image-oauth
+#docker image rm docker-image-oauth
+#docker load --input image.tar
+
 
