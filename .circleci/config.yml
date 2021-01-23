@@ -23,7 +23,9 @@ jobs:
       - run:
           name: Mvn clean package
           command: mvn clean package
-
+      - run:
+          name: build image
+          command:  docker build -f Dockerfile -t docker-image-oauth .
 
 # Orchestrate our job run sequence
 workflows:
