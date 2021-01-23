@@ -3,6 +3,7 @@
 !.circleci
 !.gitignore
 !pom.xml
+!Dockerfile
 **/resources/*.jks
 **/resources/*.pub
 **/resources/application-dev.yml
