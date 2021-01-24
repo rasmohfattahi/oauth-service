@@ -10,5 +10,3 @@ ENTRYPOINT ["java", "-jar", "docker-oauth.jar"]
 #docker save -o image.tardocker-image-oauth
 #docker image rm docker-image-oauth
 #docker load --input image.tar
-
-
