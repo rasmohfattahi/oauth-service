@@ -45,7 +45,6 @@ jobs:
       - aws-cli/install
       - aws-cli/configure:
           aws-access-key-id: "$AWS_ACCESS_KEY_ID"
-          aws_secret_access_key: "$AWS_SECRET_ACCESS_KEY"
           aws-region: "$AWS_DEFAULT_REGION"
       - run:
           name: Load image
