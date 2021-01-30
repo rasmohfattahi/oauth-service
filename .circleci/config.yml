@@ -6,7 +6,7 @@ jobs:
 
   build:
     docker:
-      - image: circleci/openjdk:11
+      - image: 202523308747.dkr.ecr.eu-central-1.amazonaws.com/oauth
         aws_auth:
           aws_access_key_id: $AWS_ACCESS_KEY_ID
           aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
@@ -37,7 +37,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/python:3.6.1
+      - image: 202523308747.dkr.ecr.eu-central-1.amazonaws.com/oauth
         aws_auth:
           aws_access_key_id: $AWS_ACCESS_KEY_ID
           aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
