@@ -10,7 +10,6 @@ jobs:
         aws_auth:
           aws_access_key_id: $AWS_ACCESS_KEY_ID
           aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
-          aws_default_region: $AWS_DEFAULT_REGION
     steps:
       - checkout
       - setup_remote_docker
@@ -42,7 +41,6 @@ jobs:
         aws_auth:
           aws_access_key_id: $AWS_ACCESS_KEY_ID
           aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
-          aws_default_region: $AWS_DEFAULT_REGION
     environment:
       AWS_DEFAULT_OUTPUT: json
     steps:
