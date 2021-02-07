@@ -4,9 +4,9 @@ spring:
   application:
     name: uaa
   datasource:
-    url: ${datasource.url}
-    username: ${datasource.username}
-    password: ${datasource.password}
+    url: jdbc:mysql://dev.czh45671ysak.eu-central-1.rds.amazonaws.com:3306/oauth?useSSL=false
+    username: root
+    password: Mft_10211488
     driverClassName: com.mysql.cj.jdbc.Driver
     dbcp2:
       max-total: 25
