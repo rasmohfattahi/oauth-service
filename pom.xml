@@ -24,7 +24,7 @@
 		<compiler.source.version>11</compiler.source.version>
 		<compiler.target.version>11</compiler.target.version>
 		<apache-commons.version>3.9</apache-commons.version>
-		<lombok.version>1.18.10</lombok.version>
+		<lombok.version>1.18.20</lombok.version>
 		<io.springfox.springfox.version>2.9.2</io.springfox.springfox.version>
 	</properties>
 
